@@ -30,7 +30,7 @@ if($_GET['code']) {
 		"title" => "Item De Teste - Por Favor, Não Ofertar! --kc:off",
         "category_id" => "MLB257111",
         "price" => 10,
-        "currency_id" => "BRL",
+        "currency_id" => "ARS",
         "available_quantity" => 1,
         "buying_mode" => "buy_it_now",
         "listing_type_id" => "bronze",
@@ -109,6 +109,6 @@ if($_GET['code']) {
 
 } else {
 
-	echo '<a href="' . $meli->getAuthUrl($redirectURI, Meli::$AUTH_URL['MLB']) . '">Login using MercadoLibre oAuth 2.0</a>';
+	echo '<a href="' . $meli->getAuthUrl($redirectURI, Meli::$AUTH_URL['MLA']) . '">Login using MercadoLibre oAuth 2.0</a>';
 }
 
